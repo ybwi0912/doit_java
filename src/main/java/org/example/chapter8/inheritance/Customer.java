@@ -31,10 +31,17 @@ public class Customer {
         this.customerGrade = customerGrade;
     }
 
-    public Customer(){
+//    public Customer(){
+//        customerGrade = "SILVER";
+//        bonusRatio = 0.01;
+//        //System.out.println("Customer() 생성자 호출");
+//    }
+
+    public Customer(int customerID, String customerName){
+        this.customerID = customerID;
+        this.customerName = customerName;
         customerGrade = "SILVER";
         bonusRatio = 0.01;
-        System.out.println("Customer() 생성자 호출");
     }
 
     public int calcPrice(int price){
